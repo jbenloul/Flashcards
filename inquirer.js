@@ -42,6 +42,7 @@ function basicFlashCards(count) {
         }
     });
 }
+
 function clozeFlashCards(count) {
     inquirer.prompt([{
         name: "name",
@@ -62,6 +63,7 @@ function clozeFlashCards(count) {
         }
     });
 }
+
 function gameStart() {
     if (process.argv[2] === "basic") {
         basicFlashCards(basicArray.length - 1)
