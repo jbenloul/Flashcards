@@ -14,14 +14,12 @@ Basic.prototype.addToArray = function(){
     basicArray.push(this);
 }
 
-
 request('https://opentdb.com/api.php?amount=25&category=20&type=multiple', function (error, response, body) {
   for (var i = 0; i < JSON.parse(body).results.length; i++) {
     var greek = new Basic(JSON.parse(body).results[i].question, JSON.parse(body).results[i].correct_answer);
     greek.addToArray()
   }  
 gameStart();
-
 });
 
 function basicFlashCards(count) {
@@ -65,8 +63,6 @@ function clozeFlashCards(count) {
         }
     });
 }
-
-// console.log(basicArray.length)
 
 function gameStart() {
     if (process.argv[2] === "basic") {

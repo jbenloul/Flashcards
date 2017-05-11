@@ -25,15 +25,4 @@ clozeQ5.addToArray();
 clozeQ6.addToArray();
 clozeQ7.addToArray();
 
-
-// var greek1 = new Basic ("Talos, the mythical giant bronze man, was the protector of which island?", "Crete")
-// var greek2 = new Basic ("Who was the only god from Greece who did not get a name change in Rome", "Apollo")
-// var greek3 = new Basic ("This Greek mythological figure is the god/goddess of battle strategy (among other things).", "Athena")
-// greek1.addToArray()
-// greek2.addToArray()
-// greek3.addToArray()
-
-
-
-
 module.exports.clozeArray = clozeArray;
